@@ -20,7 +20,7 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
-        const a = prompt("The last movie you watched");
+        const a = prompt("The last movie you watched").trim();
         const b = prompt("what grade would you give");
         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
             personalMovieDB.moives[a] = b;
